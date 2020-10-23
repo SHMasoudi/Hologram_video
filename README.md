@@ -3,7 +3,8 @@
 A graphic software for making Hologram video
 
 
-![alt text](https://raw.githubusercontent.com/SHMasoudi/Hologram_vIDEO/master/wallpaper.jpg)
+![alt text](https://github.com/SHMasoudi/Hologram_video/blob/main/wallpaper.png)
+
 
 
 
