@@ -17,7 +17,7 @@ A graphic software for making Hologram video
 
 # Usage
 
-$ git clone https://github.com/
+$ git clone https://github.com/SHMasoudi/Hologram_video.git
 
 $ pip3 install python-opencv
 
