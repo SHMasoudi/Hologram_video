@@ -10,6 +10,9 @@ from PyQt5.QtMultimedia import *
 from PyQt5.QtMultimediaWidgets import*
 import requests
 
+
+# ui handel
+
 ui,_=loadUiType('hologram.ui')
 
 
@@ -20,13 +23,7 @@ class mainApp(QMainWindow,ui):
         self.setupUi(self)
         self.handel_ui()
         self.Handel_button()
-        
-        
-        
-        
-           
-            
-        
+          
     def handel_ui(self):
         self.videoOutput = self.MakeVideoWidget()
         self.mediaPlayer = self.MakeMediaPlayer()   
@@ -72,7 +69,7 @@ class mainApp(QMainWindow,ui):
         self.mediaPlayer.setMedia(QMediaContent(QUrl.fromLocalFile(filepath)))
         self.mediaPlayer.play()
         
-        
+###################################################################################################        
         
     def Make_Hologram(self):
         
@@ -88,8 +85,7 @@ class mainApp(QMainWindow,ui):
 
         while (True):
             
-            
-            
+
 
             ret,self.frame = self.gif_url.read()
             
@@ -99,6 +95,7 @@ class mainApp(QMainWindow,ui):
                 
                 count +=1
                 time.sleep(0.1)
+                #create picture with matrix
                 self. out= np.zeros((750,750,3),np.uint8)
                 #image = cv2.imread('4.jpeg')
                 self.frame = cv2.resize(self.frame,(200,200))
